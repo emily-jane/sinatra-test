@@ -8,3 +8,8 @@ get '/' do
 get '/secret' do
   'This is a very secret page'
 end
+
+get '/hello' do
+	@visitor = params[:nickname]
+	erb :index
+end
