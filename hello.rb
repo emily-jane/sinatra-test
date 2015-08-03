@@ -1,9 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  "<div style='border: 20px dashed blue'>
-    <img src='http://bit.ly/1eze8aE'>
-   </div>"
+	erb :index
  end
 
 get '/secret' do
